@@ -14,7 +14,7 @@ export default function ResumeChatbot() {
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   const suggestedQuestions = [
     '为什么选择雇佣林至立？有哪些核心优势？',
@@ -24,9 +24,11 @@ export default function ResumeChatbot() {
     '他独立全栈开发的代表作 LinkMind 是怎么工作的？'
   ];
 
-  // Auto scroll to bottom
+  // Auto scroll to bottom inside the chat container ONLY to avoid page-level scrolling jumps
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
   }, [messages, isTyping]);
 
   const handleSendMessage = (text: string) => {
@@ -99,7 +101,7 @@ export default function ResumeChatbot() {
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50/50">
+      <div ref={messagesContainerRef} className="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50/50">
         {messages.map((msg) => (
           <div
             key={msg.id}
@@ -156,7 +158,6 @@ export default function ResumeChatbot() {
             </div>
           </div>
         )}
-        <div ref={messagesEndRef} />
       </div>
 
       {/* Suggested Questions Panel */}
