@@ -191,6 +191,26 @@ export const softwareProjects: SoftwareProject[] = [
       { title: 'LLM 智能精炼', description: '调用豆包 API 自动转译、去重，并提炼 30 秒 即可读完的精干摘要。', icon: 'Cpu' },
       { title: '飞书优雅渲染', description: '生成包含分级标题、重点标记和原文超链接的飞书标准卡片。', icon: 'MessageSquare' }
     ]
+  },
+  {
+    id: 'wildman-repair',
+    name: 'Wildman Repair Hub',
+    chineseName: '野人维修门店智能报表与工单流',
+    tagline: '面向汽车/设备维修门店的数据可视化、经营分析与自动化报表中心',
+    tags: ['门店数字化', '自动化报表', '工单管理', '经营分析'],
+    description: '针对维修服务与汽车/设备维修门店工单流转不透明、跨店经营数据分散的痛点，我自研开发了 Wildman Repair Hub 智能报表与工单流系统。系统集成门店工单全生命周期追踪、多维度维修数据看板、自动汇总经营分析报告以及可视化报表生成，大幅提效门店运营与数据对齐流程。',
+    highlights: [
+      '门店经营与维修数据可视化看板：实时监控维修工单流转状态、营收结构与配件消耗分析。',
+      '自动化经营报告与报表导出：一键生成门店日/周/月度经营分析报告，支持标准数据同步与离线导出。',
+      '跨门店工单与服务流程对齐：统一多门店维修进度与客户回访提醒，降低运营协同与履约沟通成本。'
+    ],
+    githubUrl: 'https://github.com/lzllzllzllzllzl/Wildman-Repair-Hub',
+    vercelUrl: 'https://wildman-repair-demo.vercel.app/store/report',
+    mockupFeatures: [
+      { title: '经营数据看板', description: '实时监控门店维修工单、营收趋势及配件流转，直观掌控经营全貌。', icon: 'BarChart2' },
+      { title: '自动化报表生成', description: '一键萃取门店多维运营指标，自动输出标准化经营报告与报表。', icon: 'FileText' },
+      { title: '工单响应与协同', description: '全流程跟踪维修进展与交付履约，实现跨团队极低延迟信息传递。', icon: 'Clock' }
+    ]
   }
 ];
 

@@ -26,7 +26,7 @@ import ResumeChatbot from './components/ResumeChatbot';
 
 export default function App() {
   const coreProjects = softwareProjects.filter(p => ['linkmind', 'ops-refiner', 'parking'].includes(p.id));
-  const workflowProjects = softwareProjects.filter(p => ['deloitte-diagram', 'ai-n8n'].includes(p.id));
+  const workflowProjects = softwareProjects.filter(p => ['deloitte-diagram', 'ai-n8n', 'wildman-repair'].includes(p.id));
 
   const [selectedCoreId, setSelectedCoreId] = useState<string>('linkmind');
   const [selectedWorkflowId, setSelectedWorkflowId] = useState<string>('deloitte-diagram');
@@ -283,7 +283,7 @@ export default function App() {
               <div className="space-y-1">
                 <h3 className="text-xl font-display font-bold text-gray-900 flex items-center gap-2">
                   <Code className="w-5 h-5 text-emerald-500" />
-                  <span>AI 工具流与自动化 (2款)</span>
+                  <span>AI 工具流与自动化 (3款)</span>
                 </h3>
                 <p className="text-xs text-gray-500">
                   咨询团队建模工具与全自动自动化工作流，专注流程效率革命。
