@@ -240,7 +240,7 @@ export default function App() {
 
           {/* Block 1: 核心 AI 产品 (Above, 3 projects) */}
           <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-4">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-gray-100 pb-4">
               <div className="space-y-1">
                 <h3 className="text-xl font-display font-bold text-gray-900 flex items-center gap-2">
                   <Sparkles className="w-5 h-5 text-emerald-500 animate-pulse" />
@@ -252,19 +252,19 @@ export default function App() {
               </div>
 
               {/* Tabs */}
-              <div className="p-1 bg-gray-100/80 rounded-xl border border-gray-200/50 flex flex-wrap gap-1">
+              <div className="p-1 bg-gray-100/80 rounded-xl border border-gray-200/50 flex flex-nowrap overflow-x-auto gap-1 max-w-full">
                 {coreProjects.map((proj) => (
                   <button
                     key={proj.id}
                     onClick={() => setSelectedCoreId(proj.id)}
-                    className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition duration-200 cursor-pointer ${
+                    className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition duration-200 cursor-pointer whitespace-nowrap shrink-0 ${
                       selectedCoreId === proj.id
                         ? 'bg-white text-slate-900 shadow-sm border border-gray-200/10'
                         : 'text-gray-500 hover:text-gray-800'
                     }`}
                   >
                     {proj.name}
-                    <span className="hidden md:inline text-[11px] font-normal text-gray-400 ml-1">
+                    <span className="hidden xl:inline text-[11px] font-normal text-gray-400 ml-1">
                       ({proj.chineseName.split('(')[0].split('（')[0]})
                     </span>
                   </button>
@@ -277,33 +277,33 @@ export default function App() {
             </div>
           </div>
 
-          {/* Block 2: AI 工具流 (Below, 2 projects) */}
+          {/* Block 2: AI 工具流 (Below, 3 projects) */}
           <div className="space-y-6 pt-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-4">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-gray-100 pb-4">
               <div className="space-y-1">
                 <h3 className="text-xl font-display font-bold text-gray-900 flex items-center gap-2">
                   <Code className="w-5 h-5 text-emerald-500" />
                   <span>AI 工具流与自动化 (3款)</span>
                 </h3>
                 <p className="text-xs text-gray-500">
-                  咨询团队建模工具与全自动自动化工作流，专注流程效率革命。
+                  咨询团队建模工具、全自动工作流与门店数字化，专注流程效率革命。
                 </p>
               </div>
 
               {/* Tabs */}
-              <div className="p-1 bg-gray-100/80 rounded-xl border border-gray-200/50 flex flex-wrap gap-1">
+              <div className="p-1 bg-gray-100/80 rounded-xl border border-gray-200/50 flex flex-nowrap overflow-x-auto gap-1 max-w-full">
                 {workflowProjects.map((proj) => (
                   <button
                     key={proj.id}
                     onClick={() => setSelectedWorkflowId(proj.id)}
-                    className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition duration-200 cursor-pointer ${
+                    className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold transition duration-200 cursor-pointer whitespace-nowrap shrink-0 ${
                       selectedWorkflowId === proj.id
                         ? 'bg-white text-slate-900 shadow-sm border border-gray-200/10'
                         : 'text-gray-500 hover:text-gray-800'
                     }`}
                   >
                     {proj.name}
-                    <span className="hidden md:inline text-[11px] font-normal text-gray-400 ml-1">
+                    <span className="hidden xl:inline text-[11px] font-normal text-gray-400 ml-1">
                       ({proj.chineseName.split('(')[0].split('（')[0]})
                     </span>
                   </button>
