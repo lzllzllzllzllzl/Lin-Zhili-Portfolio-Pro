@@ -90,7 +90,7 @@ export default function App() {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-slate-900/5 px-3 py-1.5 rounded-full border border-slate-900/10 text-xs font-semibold text-slate-800">
                 <Flame className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-                <span>港大硕士在读 · 寻求数字化/出海咨询/策略运营实践</span>
+                <span>港大硕士在读 · 供给策略 / 数字化与出海咨询 / 策略运营 (可实习3个月及以上)</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-gray-900 leading-[1.1]">
@@ -99,14 +99,14 @@ export default function App() {
               </h1>
               
               <p className="text-base text-gray-600 max-w-xl leading-relaxed">
-                我是林至立，香港大学电子商务与互联网计算硕士在读（天津工大信管本科，GPA 91/100，前5%）。我专注于利用 AI 工具链、低代码自动化与数据科学驱动核心商业增长及流程提效，在 <b>德勤（出海数字化咨询）</b>、<b>美团（策略运营）</b>、<b>京东（采销增长）</b>、<b>好未来（策略分析）</b>均拥有深度的落地经验。
+                我是林至立，香港大学电子商务与互联网计算硕士在读（双一流天津工大信管本科，GPA 91/100，前5%）。我专注于利用 AI 工具链、低代码自动化与数据科学驱动核心商业增长及流程提效，在 <b>字节跳动（TikTok Shop 供给策略）</b>、<b>德勤（出海数字化咨询）</b>、<b>美团（海外策略运营）</b>、<b>京东（采销增长）</b>均拥有深度的落地战绩。
               </p>
             </div>
 
             {/* Quick Contact & Bio Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl">
+                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl shrink-0">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
@@ -116,22 +116,32 @@ export default function App() {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl">
+                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase font-bold text-gray-400">电子邮箱</p>
-                  <a href="mailto:zhillin0220@163.com" className="text-xs font-semibold text-gray-800 hover:text-emerald-600">zhillin0220@163.com</a>
+                  <a href="mailto:zhillin0220@163.com" className="text-xs font-semibold text-gray-800 hover:text-emerald-600 truncate block max-w-[130px]" title="zhillin0220@163.com">zhillin0220@163.com</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl">
+                <div className="p-2.5 bg-gray-50 text-gray-500 rounded-xl shrink-0">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase font-bold text-gray-400">工作意向地</p>
-                  <p className="text-xs font-semibold text-gray-800">深圳/上海/香港 (常驻/出差)</p>
+                  <p className="text-xs font-semibold text-gray-800">深圳/上海/香港</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl shrink-0">
+                  <Calendar className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase font-bold text-gray-400">实习周期</p>
+                  <p className="text-xs font-semibold text-emerald-700 font-mono">3个月及以上</p>
                 </div>
               </div>
             </div>
@@ -210,6 +220,10 @@ export default function App() {
             <div className="bg-white border border-gray-100 rounded-2xl p-5 space-y-3 shadow-sm">
               <h5 className="text-xs font-bold uppercase tracking-wider text-gray-400">复合型硬实力指标</h5>
               <div className="flex flex-wrap gap-2">
+                <span className="text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+                  <BookmarkCheck className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>可稳定实习 3 个月及以上</span>
+                </span>
                 <span className="text-xs font-medium text-gray-700 bg-gray-50 border border-gray-100 px-3 py-1.5 rounded-xl flex items-center gap-1.5">
                   <BookmarkCheck className="w-3.5 h-3.5 text-emerald-500" />
                   <span>国家版权局软件著作权 (3项)</span>
@@ -221,6 +235,10 @@ export default function App() {
                 <span className="text-xs font-medium text-gray-700 bg-gray-50 border border-gray-100 px-3 py-1.5 rounded-xl flex items-center gap-1.5">
                   <BookmarkCheck className="w-3.5 h-3.5 text-emerald-500" />
                   <span>第一作者发表 EI 检索期刊论文</span>
+                </span>
+                <span className="text-xs font-medium text-gray-700 bg-gray-50 border border-gray-100 px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+                  <BookmarkCheck className="w-3.5 h-3.5 text-emerald-500" />
+                  <span>熟练 SQL / Python / Claude Code / Figma</span>
                 </span>
               </div>
             </div>
@@ -325,12 +343,12 @@ export default function App() {
                 名企战略与运营核心实习
               </h2>
               <p className="text-sm text-gray-500">
-                深入顶级数字化咨询公司、海外业务头部互联网平台及国内电商巨头，用技术驱动业务价值。
+                深入头部出海电商平台（TikTok Shop）、顶级数字化咨询公司、海外互联网平台及国内电商巨头，用技术驱动业务价值。
               </p>
             </div>
             <div className="flex items-center gap-1 bg-slate-900 text-white font-mono text-[11px] px-3 py-1.5 rounded-full font-semibold">
               <Briefcase className="w-3.5 h-3.5" />
-              <span>5 段商业与增长策略岗位背书</span>
+              <span>6 段头部名企战略与增长实战背书</span>
             </div>
           </div>
 
@@ -516,17 +534,18 @@ export default function App() {
                 林至立的 AI 简历助理
               </h2>
               <p className="text-sm text-gray-500 leading-relaxed">
-                想快速了解更多他没有在纸面简历展开的业务实力？我作为他的 AI 助理，能够实时回答关于他的<b>德勤咨询细节、美团出海运营、京东智能体开发、好未来绩效公式</b>以及核心优势，欢迎与我对话！
+                想快速了解更多他没有在纸面简历展开的业务实力？我作为他的 AI 助理，能够实时回答关于他的<b>字节跳动 TikTok Shop 供给策略、德勤数字化咨询、美团海外运营、京东智能体开发</b>以及出勤周期（可稳定实习 3 个月及以上），欢迎与我对话！
               </p>
             </div>
 
             <div className="space-y-3 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm text-xs text-gray-600">
               <h5 className="font-bold text-slate-800">📌 您可以试着问我：</h5>
               <ul className="space-y-1.5 list-disc pl-4 text-gray-600">
+                <li>“他在字节跳动（TikTok Shop）供给策略中取得了哪些成果？”</li>
                 <li>“他在德勤咨询写了什么工具？”</li>
                 <li>“他在美团海外 Keemart 的大促 A/B 实验数据如何？”</li>
                 <li>“他在京东开发的“商品优化智能体”提效了多少？”</li>
-                <li>“他是怎么利用 n8n 推送 AI 新闻至飞书的？”</li>
+                <li>“他的可实习时间周期与工作地点是怎样的？”</li>
               </ul>
             </div>
           </div>

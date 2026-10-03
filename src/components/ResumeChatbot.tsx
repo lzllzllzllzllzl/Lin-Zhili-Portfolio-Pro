@@ -8,7 +8,7 @@ export default function ResumeChatbot() {
     {
       id: 'init-1',
       sender: 'assistant',
-      text: '您好！我是林至立的 AI 简历助理。我深度了解至立在港大硕士的研究方向、他在德勤出海数字化咨询、美团商品实验、京东采销增长及好未来策略分析等 4 大名企的实习战绩。同时，我熟悉他独立开发的 LinkMind、Ops-Refiner 智能体、吉隆坡车位预测及德勤自动绘图等数字化系统。您可以通过点击下方推荐问题，或直接向我提问！',
+      text: '您好！我是林至立的 AI 简历助理。我深度了解至立在港大硕士在读背景、他在字节跳动 TikTok Shop 供给策略、德勤出海数字化咨询、美团海外商品实验、京东采销增长及好未来策略分析等头部名企的实战战绩（可稳定实习 3 个月及以上）。同时，我熟悉他自研的 LinkMind、Ops-Refiner 智能体、车位预测及流程图生成等数字化系统。您可以点击下方推荐问题，或直接向我提问！',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -17,7 +17,8 @@ export default function ResumeChatbot() {
   const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   const suggestedQuestions = [
-    '为什么选择雇佣林至立？有哪些核心优势？',
+    '他在字节跳动（TikTok Shop）供给策略实习中取得了哪些成果？',
+    '为什么选择雇佣林至立？有哪些核心优势与出勤可用时间？',
     '在德勤中国的出海数字化咨询实习中，他做了什么？',
     '他在京东自研的 Ops-Refiner 智能体获得了什么奖项？有何商业价值？',
     '他在美团海外 Keemart 做的 A/B 实验和商品运营成果如何？',
